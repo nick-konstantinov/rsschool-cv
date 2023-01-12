@@ -5,19 +5,27 @@
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.25;
 }
 
 body {
     margin: 0;
     background-color: #dee1e6;
+    font-family: 'Montserrat', sans-serif;;
+}
+
+.small-text {
+    font-size: 0.875rem;
+    font-weight: 400;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 850px;
     margin: 50px auto;
     background-color: #fff;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    border-radius: 3px;
+    border-radius: 4px;
 }
 
 .header {
@@ -27,7 +35,7 @@ body {
     width: 100%;
     height: 60px;
     background-color: #263143;
-    border-radius: 3px 3px 0 0;
+    border-radius: 4px 4px 0 0;
 }
 
 .social-icon {
@@ -50,16 +58,135 @@ body {
     transform: scale(1.1);
 }
 
-.main {
+.content {
     display: flex;
 }
 
 .short-info {
-    width: 30%;
+    width: 35%;
+    min-width: 300px;
     background-color: #3d506d;
+    color: #fff;
+    text-shadow: 3px 3px 5p 10px #000;
+}
+
+.short-info__content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.photo {
+    width: 200px;
+    height: auto;
+    margin: 20px auto;
+    
+}
+
+.photo img {
+    width: 100%;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.short-info__title {
+    width: 100%;
+    text-transform: uppercase;
+    border-bottom: 3px solid #fff;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.short-info__list {
+    list-style-type: none;
+    padding-left: 0;
+    font-weight: 600;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    
+
+}
+
+.short-info__li {
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    padding: 5px 0 5px 35px;
+    background-position: left center;
+}
+
+
+
+/* --- Contact Icons START --- */
+
+.short-info__li_phone {
+    background-image: url(images/icons/phone-svgrepo-com.svg);
+}
+
+.short-info__li_email {
+    background-image: url(images/icons/email-9-svgrepo-com.svg);
+}
+
+.short-info__li_telegram {
+    background-image: url(images/icons/telegram-svgrepo-com.svg);
+}
+
+.short-info__li_github {
+    background-image: url(images/icons/github-o-svgrepo-com.svg);
+}
+
+/* --- Contact Icons END --- */
+
+
+
+/* --- Skills Icons START --- */
+
+.short-info__li_html5 {
+    background-image: url(images/icons/html-5-svgrepo-com.svg);
+}
+
+.short-info__li_css3 {
+    background-image: url(images/icons/css-svgrepo-com.svg);
+}
+
+.short-info__li_js {
+    background-image: url(images/icons/js-official-svgrepo-com.svg);
+}
+
+.short-info__li_git {
+    background-image: url(images/icons/git-svgrepo-com.svg);
+}
+
+.short-info__li_basic {
+    background-image: url(images/icons/programming-monitor-svgrepo-com.svg);
+}
+
+.short-info__li_adobe {
+    background-image: url(images/icons/photoshop-color-svgrepo-com.svg);
+}
+
+.short-info__li_brackets {
+    background-image: url(images/icons/brackets-svgrepo-com.svg);
+}
+
+.short-info__li_windows {
+    background-image: url(images/icons/windows-applications-svgrepo-com.svg);
+}
+
+/* --- Skill Icons END --- */
+
+
+
+.short-info__li a {
+    text-decoration: none;
     color: #fff;
 }
 
-.detailed-info {
-    width: 70%;
+.short-info__li a:hover {
+    color: #ce8455;
+    text-decoration: underline;
 }
+
+/* Detailed-info section */
+
+.detailed-info {
+    width: 65%;
+}
+
