@@ -12,12 +12,38 @@ h1, h2, h3, h4, h5, h6, p {
 body {
     margin: 0;
     background-color: #dee1e6;
-    font-family: 'Montserrat', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
 }
+
+
+/* Helpers */
 
 .small-text {
     font-size: 0.875rem;
     font-weight: 400;
+}
+
+.thin-text {
+    font-weight: 400;
+}
+
+.status {
+    position: relative;
+    top: -2px;
+    border-radius: 10px;
+    padding: 0 5px 1px;
+    color: rgb(45, 40, 40);
+    font-weight: 400;
+    margin-left: 5px;
+    font-size: 0.7rem;
+}
+
+.completed {
+    background-color: #38b90d9d;
+}
+
+.in-progress {
+    background-color: #eedf09da;
 }
 
 .container {
@@ -70,7 +96,7 @@ body {
     text-shadow: 3px 3px 5p 10px #000;
 }
 
-.short-info__content {
+.short-info__content, .detailed-info__content {
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -78,7 +104,7 @@ body {
 .photo {
     width: 200px;
     height: auto;
-    margin: 20px auto;
+    margin: 1.25rem auto;
     
 }
 
@@ -189,4 +215,158 @@ body {
 .detailed-info {
     width: 65%;
 }
+
+.detailed-info__title {
+    font-size: 2.7rem;
+    margin-top: 1.25rem;
+}
+
+.detailed-info__subtitle {
+    font-weight: 300;
+    line-height: 0.8;
+    padding-left: 2px;
+}
+.summary__title, .education__title, .language__title, .code-example__title  {
+    width: 100%;
+    margin: 1.25rem 0 0.6rem;
+    color: #263143;
+    border-bottom: 2px solid #263143;
+    text-transform: uppercase;
+}
+
+/* --- Summary --- */
+
+.summary p {
+    margin-bottom: 0.5rem;
+}
+
+/* --- Education --- */
+
+.education__content {
+    margin: 1.25rem 0 1.25rem 0.5rem;
+    padding-left: 1rem;
+    border-left: 2px solid #263143;
+}
+
+.education__item {
+    position: relative;
+    margin-bottom: 0.75rem;
+}
+
+.education__item::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 6px;
+    left: -22px;
+    background-color: #fff;
+    border: 2px solid #263143;
+    border-radius: 50%;
+}
+
+.education__item.correct-before::before {
+    top: 14px;
+}
+
+.education__name {
+    font-size: 1rem;
+}
+
+.education__local {
+    border-left: 2px solid #263143;
+    margin-left: 0.3rem;
+    padding-left: 0.2rem;
+    font-weight: 400;
+}
+
+.education__text {
+    font-size: 0.85rem;
+}
+
+.anchor-logo {
+    position: relative;
+    top: 5px;
+    display: inline-block;
+    width: 25px;
+    height: auto;
+    margin: 0 0.3rem 0;
+    transition: transform 0.2s;
+}
+
+.anchor-logo:hover {
+    transform: scale(1.1);
+}
+
+.rss-logo {
+    width: 50px;
+    height: auto;
+    display: inline-block;
+    top: 0;
+}
+
+/* --- Languages --- */
+
+.language__item {
+    display: flex;
+}
+
+.language__name {
+    width: 20%;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.language__level {
+    position: relative;
+    top: 2px;
+    width: 80%;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.language__level p {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+pre {
+    background-color: #e9ebec;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #263143;
+    border-radius: 0 0 3px 3px;
+}
+
+.footer__item {
+    width: 33%;
+    text-align: center;
+    color: #fff;
+}
+
+.footer__item:first-child {
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.footer__item:last-child {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+.footer__rss-logo svg {
+    fill: #fff;
+    width: 80px;
+    height: auto;
+    transition: transform 0.2s;
+}
+
+.footer__rss-logo:hover svg {
+    transform: scale(1.1);
+} 
 
